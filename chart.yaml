@@ -1,0 +1,9 @@
+# Chart.yaml
+apiVersion: v2
+name: monitoring-stack
+description: Monitoring stack with Prometheus and test application
+version: 0.1.0
+dependencies:
+  - name: kube-prometheus-stack
+    version: x.y.z
+    repository: https://prometheus-community.github.io/helm-charts
