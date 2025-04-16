@@ -1,0 +1,13 @@
+# Configuración personalizada para kube-prometheus-stack
+grafana:
+  service:
+    type: NodePort
+  adminUser: admin
+  adminPassword: prom-operator
+
+prometheus:
+  prometheusSpec:
+    serviceMonitorSelector: {}
+    serviceMonitorNamespaceSelector: {}
+  service:
+    type: NodePort
